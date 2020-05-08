@@ -133,7 +133,7 @@
     	var param = "?word="+word + "&value="+value;
     	var url = baseUrl + 'validate/putvalidation'+param;
     	console.log(url);
-    	callServer("PUT",url, putValidationCallback);
+    	callServer("POST",url, putValidationCallback);
     	
     }
     

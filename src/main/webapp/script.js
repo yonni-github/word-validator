@@ -1,4 +1,6 @@
-var word;
+	var word;
+	var validScore;
+	var invalidScore;
 	const baseUrl = '//73.93.84.252/tigrigna-editor-rws/v1/';
   //Creating a new XMLHttpRequest object
     var xmlhttp;
@@ -19,7 +21,7 @@ var word;
         	if(xmlhttp.status == 200) {
           		cFunction(xmlhttp);
         	}else{
-            	alert('Something is wrong !!');
+            	alert('Remote Server Down. Please check back later!!');
         	}
         }
       };
@@ -47,20 +49,27 @@ var word;
     }
     
     function putValidationCallback(xmlhttp) {			
-		console.log(xmlhttp.responseText.trim());
+		//console.log(xmlhttp.responseText.trim());
 		getWord();
     }
     
     function postValidationCallback(xmlhttp) {			
-		console.log(xmlhttp.responseText.trim());
+		//console.log(xmlhttp.responseText.trim());
 		enableBtns();
     }
     
     function getWordCallback(xmlhttp) {			
-    	
-		word = xmlhttp.responseText.trim();
-		console.log(word);
+    	var json = JSON.parse(xmlhttp.responseText);
+		word = json.value;
+		validScore = json.validity.valid;
+		invalidScore = json.validity.invalid;
+		console.log("Word= " + word);
+		console.log("Valid= " + validScore);
+		console.log("Invalid= " + invalidScore);
 		document.getElementById("editable").textContent = word;
+		document.getElementById("totalScore").textContent = validScore;
+		document.getElementById("invalidScore").textContent = invalidScore;
+		document.getElementById("validScore").textContent = validScore;
 		enableBtns();
 		
     }
