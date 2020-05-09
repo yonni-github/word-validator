@@ -16,13 +16,13 @@
 <style type="text/css">
 #editable{
 	width: 100%;
-	margin: 2%;
-	min-height: 40px;
+	margin: 1%;
+	min-height: 50px;
 	border-style: ridge;
 	border-width: medium;
 	border-radius: 10px;
 	overflow: hidden;
-	font-size: 25px;
+	font-size: 30px;
 	text-align: center;
 }
 
@@ -67,23 +67,18 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<div>
-					<a href="#content" data-toggle="collapse">Self Type Reference</a>
-					<div id="content" class="collapse">Lorem ipsum dolor text....
-					</div>
-				</div>
 				<form id="editor" action="" autocomplete="off">
 					<div>
 						<div contenteditable="false" id="editable">Word</div>
 						<div contenteditable="false" id="score" class="row">
 							<div class="col-sm-4">
-								<h5 title="Total Validity Score">V-Score <span id="totalScore" class="label label-primary ">0</span></h5> 
+								<h4 title="Total Validity Score">V-Score <span id="totalScore" class="label label-primary ">0</span></h4> 
 							</div>
 							<div class="col-sm-4">
-								<h5 title=" # of Invalid scores/tags">Invalid <span id="invalidScore" class="label label-warning">0</span></h5> 
+								<h4 title=" # of Invalid scores/tags">Invalid <span id="invalidScore" class="label label-warning">0</span></h4> 
 							</div>
 							<div class="col-sm-4">	
-								<h5 title="# of Valid scores/tags">Valid <span id="validScore" class="label label-success">0</span></h5>
+								<h4 title="# of Valid scores/tags">Valid <span id="validScore" class="label label-success">0</span></h4>
 							</div>
 						</div>
 
