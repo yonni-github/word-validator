@@ -63,7 +63,7 @@
 		word = json.value;
 		validScore = json.validity.valid;
 		invalidScore = json.validity.invalid;
-		console.log("Word= " + word);
+		console.log("Word is= " + word);
 		console.log("Valid= " + validScore);
 		console.log("Invalid= " + invalidScore);
 		document.getElementById("editable").textContent = word;
