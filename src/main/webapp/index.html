@@ -28,9 +28,7 @@
 
 #score {
 	width: 100%;
-	min-height: 30px;
 	overflow: hidden;
-	font-size: 15px;
 	text-align: center;
 }
 .button1 {
@@ -59,6 +57,9 @@
 				<li><b>Not Sure:</b> When not sure of word's validity</li>
 				<li><b>Spell:</b> For incorrectly Spelled word or foreign term,
 					were you want to submit a correction/translation</li>
+				<li><b>V-Score:</b> Shows current validity score of a word </li>
+					<li><b>Valid:</b> Shows all valid/positive scores/tags given to a word</li>
+					<li><b>Invalid:</b> Shows all invalid/negative scores/tags given to a word</li>	
 				<li><b>Copy:</b> Copy word to clip board.</li>
 			</ul>
 		</div>
@@ -76,11 +77,13 @@
 						<div contenteditable="false" id="editable">Word</div>
 						<div contenteditable="false" id="score" class="row">
 							<div class="col-sm-4">
-								<h4>Validity Score <span id="totalScore" class="label label-primary ">0</span></h4> 
+								<h5 title="Total Validity Score">V-Score <span id="totalScore" class="label label-primary ">0</span></h5> 
 							</div>
-							<div class="col-sm-8">
-								<h4>Invalid Count <span id="invalidScore" class="label label-warning">00</span></h4> 
-								<h4>Valid Count <span id="validScore" class="label label-success">0</span></h4>
+							<div class="col-sm-4">
+								<h5 title=" # of Invalid scores/tags">Invalid <span id="invalidScore" class="label label-warning">0</span></h5> 
+							</div>
+							<div class="col-sm-4">	
+								<h5 title="# of Valid scores/tags">Valid <span id="validScore" class="label label-success">0</span></h5>
 							</div>
 						</div>
 
