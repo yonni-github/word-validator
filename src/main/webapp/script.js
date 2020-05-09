@@ -61,13 +61,14 @@
     function getWordCallback(xmlhttp) {			
     	var json = JSON.parse(xmlhttp.responseText);
 		word = json.value;
-		validScore = json.validity.valid;
-		invalidScore = json.validity.invalid;
+		validScore = parseInt(json.validity.valid);
+		invalidScore = parseInt(json.validity.invalid);
 		console.log("Word is= " + word);
+		console.log("Validity Score " + (validScore+invalidScore));
 		console.log("Valid= " + validScore);
 		console.log("Invalid= " + invalidScore);
 		document.getElementById("editable").textContent = word;
-		document.getElementById("totalScore").textContent = validScore;
+		document.getElementById("totalScore").textContent = (validScore + invalidScore);
 		document.getElementById("invalidScore").textContent = invalidScore;
 		document.getElementById("validScore").textContent = validScore;
 		enableBtns();
