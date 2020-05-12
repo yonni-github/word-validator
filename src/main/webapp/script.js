@@ -2,7 +2,7 @@
 	var validScore;
 	var invalidScore;
 	var mode;
-	const baseUrl = '//192.168.0.3:8080/tigrigna-editor-rws/v1/';
+	const baseUrl = '//73.93.84.252/tigrigna-editor-rws/v1/';
   // Creating a new XMLHttpRequest object
     var xmlhttp;
 
