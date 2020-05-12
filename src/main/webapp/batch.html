@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Tigrigna Word Validator</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script type="text/javascript" src="script.js"></script> 
+<!-- <script type="text/javascript" src="script.min.js"></script> -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style type="text/css">
+#editable{
+	width: 100%;
+	margin: 1%;
+	min-height: 50px;
+	border-style: ridge;
+	border-width: medium;
+	border-radius: 10px;
+	overflow: hidden;
+	font-size: 30px;
+	text-align: center;
+}
+
+.button2 {
+	width: 40%;
+	margin: 2%;
+}
+</style>
+
+</head>
+<body onload="initBatchPage()">
+	<header class="container">
+		<h4><a href="./index.html" >Go to Single Word Validation Mode </a></h4>
+		<h4>Tag each word as follows:</h4>
+		<h5>
+			<a href="#info" data-toggle="collapse">Click to Expand
+				Instruction (refresh page- swipe down on freeze)</a>
+		</h5>
+		<div id="info" class="collapse">
+			<ul>
+				<li><b>Valid:</b> Meaningful and correct Spelling</li>
+				<li><b>Invalid:</b> Meaningless or incorrect Spelling</li>
+				<li><b>Not Sure:</b> When not sure of word's validity</li>
+				<li><b>V-Score:</b> Shows current validity score of a word </li>
+				<li><b>Valid:</b> Shows all valid/positive scores/tags given to a word</li>
+				<li><b>Invalid:</b> Shows all invalid/negative scores/tags given to a word</li>	
+				<li><b>Copy:</b> Copy word to clip board.</li>
+			</ul>
+		</div>
+	</header>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8">
+			</div>
+			<div class="col-sm-4">
+				<input type="button" value="Next"
+					class="button2 btn btn-success btn-lg" onclick="onNext()" />
+			</div>	
+		</div>
+		<div contenteditable="false" id="list" style="overflow: scroll; height:70%; width: auto;" class="row">
+			
+		</div>
+	
+		<div class="row">
+			<div class="col-sm-8">
+			</div>
+			<div class="col-sm-4">
+				<input type="button" value="Next"
+					class="button2 btn btn-success btn-lg" onclick="onNext()" />
+			</div>		
+		</div>
+
+	</div>
+</body>
+</html>

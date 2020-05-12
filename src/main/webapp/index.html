@@ -7,8 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<!-- <script type="text/javascript" src="script.js"></script> -->
-<script type="text/javascript" src="script.min.js"></script> 
+<script type="text/javascript" src="script.js"></script> 
+<!-- <script type="text/javascript" src="script.min.js"></script> -->
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script
@@ -45,12 +45,13 @@
 </head>
 <body onload="initPage()">
 	<header class="container">
+		<h4><a href="./batch.html" >Go to Batch Validation Mode </a></h4>
 		<h4>Tag each word as follows:</h4>
 		<h5>
-			<a href="#list" data-toggle="collapse">Click to Expand
+			<a href="#info" data-toggle="collapse">Click to Expand
 				Instruction (refresh page- swipe down on freeze)</a>
 		</h5>
-		<div id="list" class="collapse">
+		<div id="info" class="collapse">
 			<ul>
 				<li><b>Valid:</b> Meaningful and correct Spelling</li>
 				<li><b>Invalid:</b> Meaningless or incorrect Spelling</li>
@@ -67,7 +68,6 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<form id="editor" action="" autocomplete="off">
 					<div>
 						<div contenteditable="false" id="editable">Word</div>
 						<div contenteditable="false" id="score" class="row">
@@ -99,7 +99,6 @@
 							</div>
 						</div>
 					</div>
-				</form>
 			</div>
 		</div>
 
