@@ -236,8 +236,8 @@
         radio.name = name;
         radio.value = value;
 
-        label.style.marginLeft = "6%";
-        label.style.marginRight = "7%";
+        label.style.marginLeft = "2%";
+        label.style.marginRight = "3%";
         label.style.marginTop = "2%";
         label.style.backgroundColor=color;
         label.style.padding="2px";
@@ -248,12 +248,12 @@
       }
     
     function makeBadge(color, value, text) {
-        var badge = document.createElement("h4");
+        var badge = document.createElement("h3");
         var span = document.createElement("span");
         span.innerHTML = ' ['+text +' ' +value+'] ';
         span.style.backgroundColor=color;
-        span.style.marginLeft = "6%";
-        span.style.marginRight = "6%";
+        span.style.marginLeft = "2%";
+        span.style.marginRight = "3%";
         span.style.marginBottom = "2%";
         span.style.padding="2px";
         return badge.appendChild(span);
@@ -309,7 +309,7 @@
    		 	bottom.style.width = "100%";
    		 	bottom.style.minHeight = "20px";
    		 	// bottom.style.margin = "1%";
-   			bottom.style.font = "18px arial,serif";
+   			bottom.style.font = "14px arial,serif";
    			// bottom.style.alignItems = "center";
    			bottom.style.alignContent = "space-between";
    			bottom.style.flexDirection = "row";
