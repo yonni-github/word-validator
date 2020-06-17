@@ -2,7 +2,9 @@
 	var validScore;
 	var invalidScore;
 	var mode;
-	const baseUrl = '//myazureubuntu.westus.cloudapp.azure.com:8080/tigrigna-editor-rws/v1/';
+	//const baseUrl = '//myazureubuntu.westus.cloudapp.azure.com:8080/tigrigna-editor-rws/v1/';
+	const baseUrl = '//pacific-depths-56367.herokuapp.com/tigrigna-editor-rws/v1/';
+
   // Creating a new XMLHttpRequest object
     var xmlhttp;
 
